@@ -1,4 +1,5 @@
 import MeetupList from "../components/meetups/MeetupList";
+
 function HomePage() {
     const DUMMY_MEETUPS = [
         {
@@ -17,10 +18,10 @@ function HomePage() {
         }
     ]
     return(
-        <div>
+       
             <MeetupList meetups={DUMMY_MEETUPS}/>
 
-        </div>
+       
     )
 }
 export default HomePage;
