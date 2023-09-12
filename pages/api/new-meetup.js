@@ -1,14 +1,14 @@
 import { MongoClient } from "mongodb";
+require("dotenv").config();
+
+const mongo_credentials = process.env.MONGO_CREDENTIALS;
 
 //POST /api/new-meetup
-
 async function handler(req, res) {
   if (req.method === "POST") {
     const data = req.body;
-    //const {title, image, address, description} = data ;
-    const client = await MongoClient.connect(
-      "mongodb+srv://noorshaik1798:FXX5GgX2n5mm01Dy@cluster0.s7vecnp.mongodb.net/meetups?retryWrites=true&w=majority"
-    );
+
+    const client = await MongoClient.connect(mongo_credentials);
 
     const db = client.db();
 
