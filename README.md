@@ -8,5 +8,8 @@ We are building a events application where we have two pages
 ### Tech Stack :-
 
 #### Next.js - 
-A React framework for web.
+A React framework for the web.
 Next.js enables you to create full-stack Web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.
+
+#### React.js - 
+The libraray for web and native user interfaces.
